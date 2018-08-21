@@ -3,7 +3,7 @@
 
 Here are the steps for generating the model data, using DA, and reading DA output.
 
-* STEP 1 
+* STEP 1: 
 Generate the model data that will be used in the DA procedure.  (Use "GenerativeModel...ipynb", and the injected current files.)
 
 The three-neuron model is integrated forward via the Jupyter Notebook script "GenerativeModel...ipynb".  This script takes in 
@@ -31,20 +31,20 @@ to the DA (Ipopt) procedure.
 
 Note that these example data are not the results of any pruning: the connectivity is all-to-all, and all neurons have leak, Na, K, and CaT ion channels.  THESE ARE THE DATA THAT WERE READ INTO THE DA PROCEDURE IN ORDER TO GENERATE THE MAIN RESULTS OF THE PAPER.
 
-* STEP 2
+* STEP 2:
 Download and install the Interior-point Optimizer (Ipopt).
 
 Instructions are here:
 https://projects.coin-or.org/Ipopt
 
-* STEP 3
+* STEP 3:
 Write an interface to work with Ipopt.
 
 Instructions are on their website (above).  The interface can be written in any language; my previous group developed a 
 C-and-Python-based interface, which is here:
 https://github.com/yejingxin/minAone
 
-* STEP 4
+* STEP 4:
 Run Ipopt, and download the output. 
 
 For each path, the output will be a .dat file of several hundred MB.  It is an mxn matrix.
@@ -55,7 +55,7 @@ The number of columns is: (3 + (t x D) + p), where t is the number of timesteps 
 is the number of parameters to be estimated.  The "3" at the start consists of the value of the cost function, and two flags
 that are not important for our purposes.
 
-* STEP 5
+* STEP 5:
 Read the output .dat file from Ipopt ("Read-DA-Results...ipynb")
 
 The information you want to extract is: the value of the cost function at each value of beta, and the values of the parameters at 
