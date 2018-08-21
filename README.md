@@ -60,3 +60,13 @@ yield the best estimates.
 
 The script "Read-DA-Results...ipynb" plots the cost function versus beta, parameter values versus beta, and prints the precise
 values of the parameters given a user-specified value of beta.
+
+* STEP 6: Run prediction, via the estimated parameters (and change the injected current to 'current_square.dat', if you want to look at 'quiescenct' and 'active' mode).
+
+Now use the generative model to make a prediction for future times.  To do this, replace the parameter values with the estimates 
+from Ipopt.  And compare the resulting integration to the integration of the original ("true") model.  
+
+If you want to look at the 'quiescence' versus 'active' modes of circuit activity described in the paper, you need to change the 
+injected currents given to the neuron models.  That is: rather than using the chaotic-plus-step injected currents that were used 
+to generate the data used in the DA procedure, use: "current_square.dat" for each neuron.  This you can specify in the first few 
+lines of the generative script "GenerativeModel...ipynb".
