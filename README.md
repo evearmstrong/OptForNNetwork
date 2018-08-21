@@ -61,7 +61,7 @@ yield the best estimates.
 The script "Read-DA-Results...ipynb" plots the cost function versus beta, parameter values versus beta, and prints the precise
 values of the parameters given a user-specified value of beta.
 
-* STEP 6: Run prediction, via the estimated parameters (and change the injected current to 'current_square.dat', if you want to look at 'quiescenct' and 'active' mode).
+* STEP 6: Run prediction, via the estimated parameters (and change the injected current to 'current_square.dat', if you want to look at 'quiescent' and 'active' mode).
 
 Now use the generative model to make a prediction for future times.  To do this, replace the parameter values with the estimates 
 from Ipopt.  And compare the resulting integration to the integration of the original ("true") model.  
