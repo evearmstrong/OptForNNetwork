@@ -17,17 +17,13 @@ specified at the beginning of the script (and de-activate the set that you don't
 
 * Data in this folder are as follows:
 
-the three membrane voltage traces generated from the "quiescence" synapse strengths:
-  V0_NaKLCaT_chaotic_Q_dt0.1_T800.0_18aug14_NOISY.txt
-  V1_NaKLCaT_chaotic_Q_dt0.1_T800.0_18aug14_NOISY.txt
-  V2_NaKLCaT_chaotic_Q_dt0.1_T800.0_18aug14_NOISY.txt
-and three membrane voltage traces generated from the "active" (WLC) synapse strengths:
-  V0_NaKLCaT_chaotic_WLC_dt0.1_T800.0_18aug14_NOISY.txt
-  V1_NaKLCaT_chaotic_WLC_dt0.1_T800.0_18aug14_NOISY.txt
-  V2_NaKLCaT_chaotic_WLC_dt0.1_T800.0_18aug14_NOISY.txt.
-The filenames indicate that these come from an "NaKL-plus-CaT" neuron model, using a chaotic injected current, with a time step
+the three membrane voltage traces generated from the "quiescence" synapse strengths: "V0_NaKLCaT_chaotic_Q_dt0.1_T800.0_18aug14_NOISY.txt", "V1_...", "V2...", 
+
+and three membrane voltage traces generated from the "active" (WLC) synapse strengths: "V0_NaKLCaT_chaotic_WLC_dt0.1_T800.0_18aug14_NOISY.txt", V1...", "V2..."
+
+The filenames indicate that these come from an "NaKL-plus-CaT" neuron model, given a chaotic injected current, with a time step
 of 0.1 ms, a total integration time of 800 ms, and that 1% noise was added to the resulting voltage trace prior to delivering the data
-to the DA (Ipopt) procedure.  
+to the DA procedure.  
 
 Note that these example data are not the results of any pruning: the connectivity is all-to-all, and all neurons have leak, Na, K, and CaT ion channels.  THESE ARE THE DATA THAT WERE READ INTO THE DA PROCEDURE IN ORDER TO GENERATE THE MAIN RESULTS OF THE PAPER.
 
