@@ -34,7 +34,7 @@ Instructions are here:
 https://projects.coin-or.org/Ipopt
 
 * STEP 3:
-Write an interface to work with Ipopt.
+Use an interface to work with Ipopt, or write your own.
 
 Instructions are on their website (above).  The interface can be written in any language; my previous group developed a 
 C-and-Python-based interface, which is here:
